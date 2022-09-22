@@ -1,0 +1,34 @@
+<script>
+    //Problema: Loja de veículos
+    //Crie os seguintes arrays:
+    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosHatch = ["308", "Focus", "i30"];
+    
+    //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    //Apresente a lista final de cada tipo de veículo.
+
+    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    const tipo = ["1-SUV", "2-Sedan", "3-Hatch"]
+    const carro1 = prompt("Minfale um carrin pra por") ;
+    const carror1 = parseInt(prompt("Min fale o codigo do carrin: "+ tipo.join(" | "))) ;
+    const carro2 = prompt("Minfale um carrin pra por") ;
+    const carror2 = parseInt(prompt("Min fale o codigo do carrin: "+ tipo.join(" | "))) ;
+    const carro3 = prompt("Minfale um carrin pra por") ;
+    const carror3 = parseInt(prompt("Min fale o codigo do carrin: "+ tipo.join(" | "))) ;
+
+    //PROCESSAMENTO
+
+    (carror1 === 1) ? carrosSUV.push(carro1) : (carror1 === 2) ? cassosSedan.push(carro1) : carrosHatch.push(carro1)
+    (carror2 === 1) ? carrosSUV.push(carro2) : (carror2 === 2) ? cassosSedan.push(carro2) : carrosHatch.push(carro2)
+    (carror3 === 1) ? carrosSUV.push(carro3) : (carror3 === 2) ? cassosSedan.push(carro3) : carrosHatch.push(carro3)
+
+    //SAÍDA
+    document.write(`SUV: ${carrosSUV}, Sedan: ${cassosSedan}, Hatch: ${carrosHatch}`)
+
+</script>
